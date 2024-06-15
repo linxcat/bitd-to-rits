@@ -1,0 +1,33 @@
+{
+  "id": "bitd-to-rits",
+  "title": "BitD-to-RitS",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "blades-in-the-dark",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "esmodules": ["./scripts/module.js"],
+  "languages": [
+   {
+     "lang": "en",
+     "name": "English",
+     "path": "lang/en.json"
+   }
+  ],
+  "description": "Renaming and reconfiguring various static values to support Runners in the Shadows in a Blades in the Dark system.",
+  "authors": [
+    {
+      "name": "Cone",
+      "flags": {}
+    }
+  ]
+}
