@@ -1,21 +1,23 @@
 export async function registerHooks() {
-  Hooks.once("ready", () => {
+  Hooks.once("setup", () => {
     Hooks.on("ready", () => {
-      game?.system?.model?.Actor?.character?.attributes?.magic?.updateSource({
-        "exp": 0,
-        "exp_max": 0,
-        "label": "BITD.SkillsMagic",
-        "skills": {
-           'assense': {
+      game.updateSource({
+        "system.model.Actor.character.attributes.magic": {
+          "exp": 0,
+          "exp_max": 0,
+          "label": "BITD.SkillsMagic",
+          "skills": {
+            'assense': {
               "label": "BITD.SkillsAssense",
               "value": 0,
               "max": 4
-           },
-           'emergence': {
+            },
+            'emergence': {
               "label": "BITD.SkillsEmergence",
               "value": 0,
               "max": 4
-           }
+            }
+          }
         }
       })
     });
